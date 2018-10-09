@@ -114,4 +114,9 @@
   	
 - Checking erro Logs:
 	- go to: `vim /var/logs/apache/error.log`
+
+- Disable remote root login for security :
+	- Go to : `vim etc/ssh/sshd_config`
+	- Change line : `PermitRootLogin prohibit-password` to `PermitRootLogin no`
+	- Restart ssh : `sudo service ssh restart`
 	
