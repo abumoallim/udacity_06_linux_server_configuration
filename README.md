@@ -13,7 +13,7 @@
 
 - Update all the currently installed Packages
 	- `sudo apt-get update` (Will update all the references to application on ubuntu and it is stored in /etc/apt/sources.list)
-        - `sudo apt-get upgrade`(Will upgrade all the applications)
+      	- `sudo apt-get upgrade`(Will upgrade all the applications)
 
 - Change SSH default port to 2200
   	- Go to `cd etc/ssh/sshd_config`
@@ -108,10 +108,10 @@
 - Updating apache config and wsgi file :
 	- Now you need to add wsgi file inside our project as : catalog_item_application.wsgi
 	- create a new config file at `/etc/apache2/sites-available/catalog_item_application.conf`
-	- delete default 0000-default.config
+	- delete default `/etc/apache2/sites-enabled/0000-default.config`
 	- Enable the site: `sudo a2ensite catalog_item_application`
 	- Reload Apache: `sudo service apache2 reload`
   	
 - Checking erro Logs:
-	- go to : /var/logs/apache/error.log
+	- go to: `vim /var/logs/apache/error.log`
 	
