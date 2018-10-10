@@ -14,6 +14,7 @@
 - Update all the currently installed Packages
 	- `sudo apt-get update` (Will update all the references to application on ubuntu and it is stored in /etc/apt/sources.list)
       	- `sudo apt-get upgrade`(Will upgrade all the applications)
+	- `sudo apt-get dist-upgrade` (To upgrade kept back packages : https://serverfault.com/questions/265410/ubuntu-server-message-says-packages-can-be-updated-but-apt-get-does-not-update)
 
 - Change SSH default port to 2200
   	- Go to `cd etc/ssh/sshd_config`
